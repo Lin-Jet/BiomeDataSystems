@@ -1,0 +1,298 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-family: 'Abel', sans-serif;
+  background-color: #00082a;
+  /* background-color: #05376C;
+  background-image: url(./components/images/BDSpictures/screen-2.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  */
+  color: white;
+}
+
+  
+  
+  
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    font-size: 1.2em;
+    margin-bottom: 5rem;
+    background: linear-gradient(90deg,#0f0f0f, #002661);
+  }
+  .nav-logo{
+    width: 25rem;
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+    letter-spacing: 0.3rem;
+    text-shadow:0rem 0rem 1rem #00ffff;
+  }
+  .nav-items{
+    display: flex;
+    align-items: baseline;
+  }
+  .nav-items > li{
+    margin-right: 3rem;
+    list-style-type: none;
+  }
+  a:link{
+    color:white;
+    text-decoration: none;
+  }
+  a:visited{
+    color:white;
+  }
+  a:hover{
+    color:#00ffff;
+    cursor: pointer;
+  }
+  .nav-about{
+    transition-duration: 0.4s;
+  }
+  .nav-about:hover{
+    font-size: 1.3rem;
+    transition-duration: 0.4s;
+  }
+  .dropdown {
+    position: relative;
+    display:inline-block;
+    text-decoration: none;
+    border: white solid 0.1rem;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    height: 1.5rem;
+    transition-duration: 0.4s;
+  }
+  .dropdown-content{
+    transition-duration: 0.4s;
+    display: none;
+    position: absolute;
+    z-index:1;
+  }
+  .dropdown-content > li{
+    border: solid 0.1rem white;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    height: 1.5rem;
+    width: 5rem;
+    margin-top:2rem;
+    margin-bottom: 0rem;
+    box-shadow: 3px 3px 10px white;
+    position: relative;
+    right: 0.5rem;
+    transition-duration: 0.4s;
+    font-weight: none;
+  }
+  .dropdown-content > li > a{
+    position: absolute;
+    width: 6rem;
+    right: 0.03rem;
+    text-align: center;
+    font-weight: bolder;
+    transition-duration: 0.4s;
+  }
+  .dropdown-content > li:hover{
+    transition-duration: 0.4s;
+    transform: rotate(-7deg);
+    box-shadow: 3px -3px 10px #00ffff;
+    background: linear-gradient(90deg, #00082a, #002661);
+    padding: 1rem;
+    font-size: 1.3em;
+    left:0.3rem;
+    padding-left: 0.5rem;
+    padding-top: 0.6rem;
+    background: linear-gradient(90deg, #045dcd, #04d8f9);
+  }
+  .dropdown:hover .dropdown-content{
+    display: block;
+    transition-duration: 0.4s;
+  }
+  .dropdown:hover{
+    background: linear-gradient(90deg, #045dcd, #06356B);
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 0.6rem;
+    transition-duration: 0.4s;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .header {
+      animation: logo infinite 11s linear;
+    }
+  }
+  @keyframes logo {
+    from {
+      transform: rotate3d(0.5, 1, 0, 360deg);
+    }
+    to {
+      transform: rotate(0, 1, 0, 0deg);
+    }
+  }
+  .header{
+    margin:auto;
+    border: hidden;
+    border-radius: 50%;
+    width: 30rem;
+    box-shadow: 0rem 0rem 6rem#00ffff;
+    transition-duration: 1s;
+  }
+  .header:hover{
+    margin:auto;
+    border: hidden;
+    border-radius: 50%;
+    width: 30rem;
+    box-shadow: 0rem 0rem 70rem#00ffff;
+    transition-duration: 3s;
+  }
+  
+  .coming-soon{
+    text-align: center;
+    padding-bottom: 9rem;
+    padding-top: 3rem;
+    width: 25rem;
+    margin: auto;
+    position:relative;
+  }
+  .coming-soon-main{
+    font-size: 3.5em;
+    font-weight: bolder;
+    text-shadow:0rem 0rem 1rem #00ffff;
+  }
+  .coming-soon-sub{
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .spinner {
+      animation: spin infinite 10s linear;
+    }
+  }
+  .spinner{
+    animation: spin 1s infinite linear;
+    border: hidden;
+    border-radius: 50%;
+    box-shadow: 0.2rem 0.2rem 3rem #04d8f9;
+    height: 25rem;
+    width: 25rem;
+    margin: auto;
+    margin-top: 3rem;
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  .coming-soon-watch{
+    position: absolute;
+    border: none;
+    border-radius: 50%;
+    height: 25rem;
+    width: 25rem;
+    top: 17.05rem;
+    left:0rem;
+    z-index: 1;
+  }
+  
+  .about{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .about-title{
+    letter-spacing: 0.3rem;
+    font-size: 3em;
+    text-decoration: underline 1rem;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+  .mission{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 2rem;
+    justify-content: space-around;
+    background: radial-gradient(#002661 10%, #0f0f0f 80%, #00082a 100%);
+  }
+  .mission>h1{
+    font-size: 2em;
+    width:auto;
+    text-align: center;
+  }
+  .mission>p{
+    width:30rem;
+    margin:auto;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  
+  .card-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: flex-start;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .card{
+    background: #00082a;
+    padding: 0rem;
+    border: 1px solid #009CFF;
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 0.6rem #009CFF;
+  }
+  .card-header{
+    margin-bottom: .5rem;
+    overflow: hidden;
+  }
+  .card-header > img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 8/9; 
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  
+  .card-body{
+    font-size: .9em;
+    text-align: center;
+  }
+  
+  
+  .footer{
+    background: linear-gradient(90deg,#0f0f0f, #002661);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .footer-items{
+    display: flex;
+    justify-content: center;
+  }
+  .footer-items > li{
+    margin:1rem;
+    list-style-type: none;
+    
+  }
+  .footer-items > li > a{
+    transition-duration: 0.4s;
+  }
+  .footer-items > li > a:hover{
+    font-size: 1.5rem;
+    transition-duration: 0.4s;
+  }
